@@ -1,38 +1,56 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app{
+  background-color: #fafafa;
+  height: 100vh;
+}
+.app_header{
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: white;
+  object-fit: contain;
+  padding: 20px;
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  justify-content: space-between;
+}
+.upload__image{
+  padding: 20px;
+}
+.app__headerImage{
+  object-fit: contain;
+}
+.app__posts{
+  padding: 20px;
+}
+.paper {
+  position: absolute;
+  width: 400px;
+  background-color: white; /* Assuming theme.palette.background.paper is white */
+  border: 2px solid #000;
+  box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 1px 5px 0px rgba(0,0,0,0.12); /* Adjust based on theme.shadows[5] */
+  padding: 16px 32px 24px; /* Assuming theme.spacing(2, 4, 3) translates to these values */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app__signUp{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.input__submit{
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.button__submit{
+  background-color: #0095f6;
+  border: none;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  padding: 10px;
+  border-radius: 10px;
 }
